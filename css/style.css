@@ -1,0 +1,761 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+    background:#050b14;
+    color:white;
+
+}
+
+
+/* ================= HEADER ================= */
+
+
+header{
+
+    height:90px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 70px;
+
+    border-bottom:1px solid #16283f;
+
+}
+
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    letter-spacing:0.5px;
+
+}
+
+
+
+.logo span{
+
+    display:block;
+
+    font-size:14px;
+
+    color:#9fb3cc;
+
+    margin-top:8px;
+
+    letter-spacing:0.3px;
+
+}
+
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+
+nav a{
+
+    color:#d7e2ef;
+
+    font-size:15px;
+
+    text-decoration:none;
+
+}
+
+
+
+header button{
+
+    background:#1d78ff;
+
+    border:none;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border-radius:25px;
+
+    font-size:15px;
+
+}
+
+
+
+/* ================= HERO ================= */
+
+
+.hero{
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:60px 70px;
+
+}
+
+
+
+.hero-text{
+
+    width:40%;
+
+}
+
+
+
+.hero-text h1{
+
+    font-size:52px;
+
+    line-height:1.1;
+
+    font-weight:500;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero-text h2{
+
+    font-size:24px;
+
+    line-height:1.45;
+
+    font-weight:400;
+
+    color:#b8c8dc;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.hero-text p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+    color:#94a9c2;
+
+    max-width:520px;
+
+}
+
+
+
+.primary{
+
+    margin-top:35px;
+
+    padding:14px 35px;
+
+    background:#1d78ff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:25px;
+
+    font-size:16px;
+
+}
+
+
+
+/* ================= EOM VISUAL ================= */
+
+
+.hero-visual{
+
+    width:60%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    background-image:
+
+    linear-gradient(
+    rgba(255,255,255,0.035) 1px,
+    transparent 1px
+    ),
+
+    linear-gradient(
+    90deg,
+    rgba(255,255,255,0.035) 1px,
+    transparent 1px
+    );
+
+
+    background-size:
+
+    40px 40px;
+
+
+    border-radius:30px;
+
+
+    position:relative;
+
+}
+
+
+
+/* ================= DIGITAL ENGINEERING WORLD ================= */
+
+
+.digital-system{
+
+    position:relative;
+
+    width:600px;
+
+    height:500px;
+
+}
+
+
+
+/* ===== Engineering Digital Network ===== */
+
+
+.digital-system{
+
+    position:relative;
+
+    width:600px;
+
+    height:560px;
+
+}
+
+
+
+.node{
+
+    position:absolute;
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:#091522;
+
+    border:1px solid #3277c9;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:5px;
+
+    line-height:1.2;
+
+    font-size:12px;
+
+    color:#dcecff;
+
+    z-index:10;
+
+    cursor:pointer;
+
+    transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+}
+.node:hover{
+
+    border-color:#5bb5ff;
+
+    box-shadow:
+    0 0 20px rgba(77,163,255,0.8);
+
+}
+
+
+/* ================= CONNECTION LINES ================= */
+
+
+.connection{
+
+    position:absolute;
+
+    height:2px;
+
+    background:#3277c9;
+
+    transform-origin:left center;
+
+}
+
+
+
+
+.line-scada{
+
+    width:110px;
+
+    left:275px;
+
+    top:100px;
+
+    transform:rotate(90deg);
+
+}
+
+
+
+
+.line-robotics{
+
+    width:110px;
+
+    left:280px;
+
+    top:120px;
+
+    transform:rotate(90deg);
+
+}
+
+
+
+
+.line-vision{
+
+    width:150px;
+
+    right:160px;
+
+    top:210px;
+
+    transform:rotate(180deg);
+
+}
+
+
+
+
+.line-servo{
+
+    width:150px;
+
+    left:160px;
+
+    top:300px;
+
+}
+
+
+
+
+.line-plc{
+
+    width:150px;
+
+    right:160px;
+
+    top:420px;
+
+    transform:rotate(180deg);
+
+}
+
+
+
+
+.line-vfd{
+
+    width:150px;
+
+    right:160px;
+
+    top:300px;
+
+    transform:rotate(180deg);
+
+}
+
+
+
+
+.line-mcc{
+
+    width:100px;
+
+    left:250px;
+
+    bottom:180px;
+
+    transform:rotate(90deg);
+
+}
+
+
+
+
+
+/* ================= EOM CORE ================= */
+
+
+.eom-core{
+
+
+    position:absolute;
+
+
+    left:180px;
+
+    top:200px;
+
+
+    width:240px;
+
+    height:240px;
+
+
+    border-radius:50%;
+
+
+    background:
+    radial-gradient(circle at 35% 30%, #5bb5ff, #16345f 55%, #081525);
+
+    border:1px solid #4da3ff;
+
+
+
+
+    border:1px solid #3277c9;
+
+
+
+    display:flex;
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    font-size:38px;
+
+    font-weight:600;
+
+}
+
+
+
+
+.eom-core span{
+
+
+    margin-top:10px;
+
+
+    font-size:14px;
+
+
+    color:#d2e5ff;
+
+
+    line-height:1.5;
+
+
+}
+
+
+
+
+.layer{
+
+    position:absolute;
+
+    bottom:-40px;
+
+    width:100%;
+
+    text-align:center;
+
+    color:#8fb8e8;
+
+    font-size:14px;
+
+}
+.digital-system{
+
+    position:relative;
+
+    width:600px;
+
+    height:600px;
+
+}
+
+
+.connections{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:600px;
+
+    height:600px;
+
+    z-index:0;
+
+}
+
+
+.connections line{
+
+    stroke:#3277c9;
+
+    stroke-width:1.5;
+
+    opacity:0.45;
+
+}
+.eom-core{
+
+    animation:eomPulse 4s ease-in-out infinite;
+
+}
+
+
+@keyframes eomPulse{
+
+
+    0%{
+
+        box-shadow:
+        0 0 20px rgba(77,163,255,0.35);
+
+    }
+
+
+    50%{
+
+        box-shadow:
+        0 0 45px rgba(77,163,255,0.75);
+
+    }
+
+
+    100%{
+
+        box-shadow:
+        0 0 20px rgba(77,163,255,0.35);
+
+    }
+
+}
+.connections{
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:600px;
+
+    height:600px;
+
+    z-index:1;
+
+    pointer-events:none;
+
+}
+
+/* ================= WEBSITE SECTIONS ================= */
+
+
+section:not(.hero){
+
+    padding:80px 70px;
+
+    border-top:1px solid #16283f;
+
+}
+
+
+section:not(.hero) h2{
+
+    font-size:36px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+
+section:not(.hero) p{
+
+    max-width:700px;
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#94a9c2;
+
+}
+
+/* ================= EOM DEMO ================= */
+
+
+#eom-demo{
+
+    padding:100px 70px;
+
+    border-top:1px solid #16283f;
+
+    text-align:center;
+
+}
+
+
+
+#eom-demo h2{
+
+    font-size:40px;
+
+    font-weight:500;
+
+    margin-bottom:20px;
+
+}
+
+
+
+#eom-demo p{
+
+    color:#94a9c2;
+
+    font-size:18px;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.demo-flow{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+
+
+.demo-flow div{
+
+    width:150px;
+
+    height:100px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    background:#091522;
+
+    border:1px solid #3277c9;
+
+    border-radius:15px;
+
+    color:#dcecff;
+
+    font-size:16px;
+
+}
+
+/* ================= ABOUT ================= */
+
+.about-item{
+
+    margin-top:50px;
+
+}
+
+
+.about-item h3{
+
+    font-size:24px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+    color:white;
+
+}
+
+
+.about-item p{
+
+    max-width:800px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#94a9c2;
+
+}
