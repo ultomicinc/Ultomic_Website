@@ -714,3 +714,15 @@ html {
 section {
     scroll-margin-top: 90px;
 }
+
+.vision-video {
+    margin-top: 80px;
+    width: 100%;
+    max-width: 520px;
+}
+
+.vision-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
