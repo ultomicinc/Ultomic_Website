@@ -11,9 +11,7 @@
 
 <body>
 
-
     <header>
-
 
         <div class="logo">
 
@@ -25,32 +23,44 @@
 
         </div>
 
-
-
-        <nav>
+        <nav class="desktop-nav">
 
             <a href="#about">About</a>
-
             <a href="#platform">Platform</a>
-
             <a href="#technology">Technology</a>
-
             <a href="#industries">Industries</a>
-
             <a href="#solutions">Solutions</a>
 
         </nav>
 
-
-
-        <button onclick="location.href='#contact'">
+        <button class="contact-button" onclick="location.href='#contact'">
             Contact Us
         </button>
 
+        <button class="menu-button" onclick="toggleMenu()" aria-label="Open menu">
+            ☰
+        </button>
 
     </header>
 
 
+    <!-- MOBILE / TABLET MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#about" onclick="closeMenu()">About</a>
+
+        <a href="#platform" onclick="closeMenu()">Platform</a>
+
+        <a href="#technology" onclick="closeMenu()">Technology</a>
+
+        <a href="#industries" onclick="closeMenu()">Industries</a>
+
+        <a href="#solutions" onclick="closeMenu()">Solutions</a>
+
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+
+    </div>
 
 
     <section class="hero">
@@ -420,6 +430,29 @@
 
 
     <script>
+
+        function toggleMenu() {
+
+            const menu = document.getElementById("mobileMenu");
+
+            if (menu.style.display === "block") {
+
+                menu.style.display = "none";
+
+            } else {
+
+                menu.style.display = "block";
+
+            }
+
+        }
+
+
+        function closeMenu() {
+
+            document.getElementById("mobileMenu").style.display = "none";
+
+        }
 
         const equipmentObject = {
 

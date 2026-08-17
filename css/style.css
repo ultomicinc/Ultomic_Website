@@ -726,3 +726,334 @@ section {
     height: auto;
     display: block;
 }
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        height: auto;
+        min-height: 70px;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo span {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header button {
+        padding: 9px 18px;
+        font-size: 13px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 50px 20px;
+        gap: 50px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .primary {
+        margin-top: 25px;
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+
+
+    /* VISION VIDEO */
+
+    .vision-video {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 35px;
+    }
+
+    .vision-video video {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* EOM VISUAL */
+
+    .hero-visual {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .digital-system {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        transform: scale(0.52);
+        transform-origin: center center;
+        margin: -120px auto;
+        flex-shrink: 0;
+    }
+
+
+    /* SECTIONS */
+
+    section:not(.hero) {
+        padding: 60px 20px;
+    }
+
+    section:not(.hero) h2 {
+        font-size: 30px;
+    }
+
+    section:not(.hero) p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* ABOUT */
+
+    .about-item {
+        margin-top: 35px;
+    }
+
+    .about-item h3 {
+        font-size: 21px;
+    }
+
+    .about-item p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+
+    /* EOM DEMO */
+
+    #eom-demo {
+        padding: 70px 20px;
+    }
+
+    #eom-demo h2 {
+        font-size: 30px;
+    }
+
+    .demo-flow {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .demo-flow div {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
+
+/* ================= IPAD / TABLET ================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    header {
+        padding: 0 30px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .logo span {
+        font-size: 12px;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
+    .hero-visual {
+        min-width: 0;
+        overflow: hidden;
+    }
+
+}
+
+/* ================= MOBILE / TABLET MENU ================= */
+
+.menu-button {
+    display: none;
+
+    background: transparent;
+    border: none;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+    padding: 5px;
+}
+
+
+.mobile-menu {
+    display: none;
+
+    position: fixed;
+
+    top: 90px;
+    left: 0;
+
+    width: 100%;
+
+    background: #050b14;
+
+    border-bottom: 1px solid #16283f;
+
+    z-index: 999;
+
+    padding: 20px 0;
+}
+
+
+.mobile-menu a {
+    display: block;
+
+    padding: 16px 30px;
+
+    color: #d7e2ef;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    border-bottom: 1px solid #16283f;
+}
+
+
+.mobile-menu a:hover {
+    background: #0b1a2b;
+}
+
+
+/* ================= IPAD + MOBILE ================= */
+
+@media (max-width: 1024px) {
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .contact-button {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+}
+
+
+/* ================= PHONE ================= */
+
+@media (max-width: 768px) {
+
+    header {
+        min-height: 70px;
+        height: auto;
+
+        padding: 15px 20px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .logo span {
+        font-size: 11px;
+        margin-top: 4px;
+    }
+
+    .mobile-menu {
+        top: 70px;
+    }
+
+}
+
+/* ================= CURSOR ================= */
+
+body {
+    cursor: default;
+}
+
+button,
+a,
+.node {
+    cursor: pointer;
+}
+
+/* Remove custom cursor */
+.cursor,
+.custom-cursor,
+.cursor-dot,
+.cursor-circle,
+.mouse-cursor {
+    display: none !important;
+}
+
+html,
+body,
+a,
+button,
+.node {
+    cursor: auto !important;
+}
+
